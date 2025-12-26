@@ -2,12 +2,12 @@ export const httpsServerGenerateWallets = `
 import axios from 'axios';
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const amount = "25";
 //////////////////////////////// END ////////////////////////////////////////
 
 const generateWallets = async (amount) => {
-  const URL = "https://api.pumpvial.com/generate-wallets";
+  const URL = "https://api.pumpagent.com/generate-wallets";
 
   try {
     const request = await axios.post(URL, { amount }, { 
@@ -33,7 +33,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, "confirmed");
 const FUNDER_PRIVATE_KEY = "Enter the funder's private key here";
@@ -52,7 +52,7 @@ const payload = {
 };
 
 const fundWallets = async () => {
-  const URL = "https://api.pumpvial.com/fund-wallets";
+  const URL = "https://api.pumpagent.com/fund-wallets";
 
   try {
       const request = await axios.post(URL, payload, { 
@@ -83,7 +83,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, "confirmed");
 const FUNDER_PRIVATE_KEY = "Enter the funder's private key here";
@@ -96,7 +96,7 @@ const payload = {
 };
 
 const claimProfits = async () => {
-  const URL = "https://api.pumpvial.com/claim-profits";
+  const URL = "https://api.pumpagent.com/claim-profits";
 
   try {
       const request = await axios.post(URL, payload, { 
@@ -125,14 +125,14 @@ export const httpsServerPumpChart = `
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const payload = {
   ca: "9P1qxcUKQUJRtTL84duQrzqpePUbcJMV3WaHJFMfpump", 
 };
 //////////////////////////////// END ////////////////////////////////////////
 
 const pumpChart = async () => {
-  const URL = "https://api.pumpvial.com/pump-chart";
+  const URL = "https://api.pumpagent.com/pump-chart";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -155,7 +155,7 @@ export const httpsServerCreateIPFS = `
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const payload = {
   image: imageString, // From the example below (Base64 data url)
   name: "PumpKit Memecoin",
@@ -168,7 +168,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const createIPFS = async () => {
-  const URL = "https://api.pumpvial.com/create-ipfs";
+  const URL = "https://api.pumpagent.com/create-ipfs";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -193,7 +193,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, "confirmed");
 const CREATOR_PRIVATE_KEY = "Enter the creator's private key here";
@@ -201,7 +201,7 @@ const creatorKeypair = Keypair.fromSecretKey(bs58.decode(CREATOR_PRIVATE_KEY));
 //////////////////////////////// END ////////////////////////////////////////
 
 const createLookupTable = async () => {
-  const URL = "https://api.pumpvial.com/create-lookup-table";
+  const URL = "https://api.pumpagent.com/create-lookup-table";
 
   try {
       const request = await axios.post(URL, { creator: creatorKeypair.publicKey }, { 
@@ -235,7 +235,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, "confirmed");
 const CREATOR_PRIVATE_KEY = "Enter the creator's private key here";
@@ -252,7 +252,7 @@ const lut = await createLookupTable();
 //////////////////////////////// END ////////////////////////////////////////
 
 const extendLookupTable = async () => {
-  const URL = "https://api.pumpvial.com/extend-lookup-table";
+  const URL = "https://api.pumpagent.com/extend-lookup-table";
 
   try {
     const request = await axios.post(
@@ -289,12 +289,12 @@ export const httpsServerPumpBondingCurve = `
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const ca = "7jgMahwDFb3joVRfxhmeVXPzCqpFSxYnni3qdsKvpump";
 //////////////////////////////// END ////////////////////////////////////////
 
 const getPumpBondingCurve = async () => {
-  const URL = "https://api.pumpvial.com/pump-bonding-curve";
+  const URL = "https://api.pumpagent.com/pump-bonding-curve";
 
   try {
     const request = await axios.post(URL, { ca }, {
@@ -317,12 +317,12 @@ export const httpsServerPumpTokenInfo = `
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const ca = "7jgMahwDFb3joVRfxhmeVXPzCqpFSxYnni3qdsKvpump";
 //////////////////////////////// END ////////////////////////////////////////
 
 const getPumpTokenInfo = async () => {
-  const URL = "https://api.pumpvial.com/token-info";
+  const URL = "https://api.pumpagent.com/token-info";
 
   try {
     const request = await axios.post(URL, { ca }, {
@@ -347,7 +347,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, 'confirmed');
 const RECIPIENT_PRIVATE_KEY = "Enter token recipient's private key."; 
@@ -361,7 +361,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const buyPumpSingle = async () => {
-  const URL = "https://api.pumpvial.com/pump-single-buy";
+  const URL = "https://api.pumpagent.com/pump-single-buy";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -390,7 +390,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, 'confirmed');
 const RECIPIENT_PRIVATE_KEY = "Enter token recipient's private key."; 
@@ -404,7 +404,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const bumpToken = async () => {
-  const URL = "https://api.pumpvial.com/pump-token-bump";
+  const URL = "https://api.pumpagent.com/pump-token-bump";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -435,7 +435,7 @@ import bs58 from "bs58";
 import axios from 'axios';
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, 'confirmed');
 const RECIPIENT_PRIVATE_KEY = "Enter token recipient's private key."; 
@@ -450,7 +450,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const sellPumpSingle = async () => {
-  const URL = "https://pumpvial.com/pump-single-sell";
+  const URL = "https://api.pumpagent.com/pump-single-sell";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -479,7 +479,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const TRANSACTION_FEE_PAYER_PRIVATE_KEY = "Enter transaction fee payer's private key."; 
 const feePayer = Keypair.fromSecretKey(bs58.decode(TRANSACTION_FEE_PAYER_PRIVATE_KEY));
 
@@ -508,7 +508,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const buyPumpMulti = async () => {
-  const URL = "https://api.pumpvial.com/pump-multi-buy";
+  const URL = "https://api.pumpagent.com/pump-multi-buy";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -551,7 +551,7 @@ import bs58 from "bs58";
 import axios from 'axios';
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const TRANSACTION_FEE_PAYER_PRIVATE_KEY = "Enter transaction fee payer's private key."; 
 const feePayer = Keypair.fromSecretKey(bs58.decode(TRANSACTION_FEE_PAYER_PRIVATE_KEY));
 
@@ -580,7 +580,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const sellPumpMulti = async () => {
-  const URL = "https://api.pumpvial.com/pump-multi-sell";
+  const URL = "https://api.pumpagent.com/pump-multi-sell";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -623,7 +623,7 @@ import bs58 from "bs58";
 import axios from 'axios';
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const FUNDS_RECEIVER_PRIVATE_KEY = "Enter transaction fee payer's private key."; 
 const fundsReceiver = Keypair.fromSecretKey(bs58.decode(FUNDS_RECEIVER_PRIVATE_KEY));
 
@@ -650,7 +650,7 @@ const payload = {
 const sanitizedWallets = fullWalletData.map(({ privateKey, ...rest }) => rest);
 
 const pumpDumpAll = async () => {
-  const URL = "https://api.pumpvial.com/pump-dump-all";
+  const URL = "https://api.pumpagent.com/pump-dump-all";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -693,7 +693,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, 'confirmed');
 const DEVELOPER_PRIVATE_KEY = "Enter developer private key."; 
@@ -709,7 +709,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const pumpLaunchToken = async () => {
-  const URL = "https://api.pumpvial.com/pump-launch-token";
+  const URL = "https://api.pumpagent.com/pump-launch-token";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -740,7 +740,7 @@ import bs58 from "bs58";
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const FUNDER_PRIVATE_KEY = "Enter Funder Private Key"; 
 const funder = Keypair.fromSecretKey(bs58.decode(FUNDER_PRIVATE_KEY));
 
@@ -773,7 +773,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const pumpLaunchBundle = async () => {
-  const URL = "https://api.pumpvial.com/pump-launch-bundle";
+  const URL = "https://api.pumpagent.com/pump-launch-bundle";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -895,7 +895,7 @@ import bs58 from "bs58";
 import axios from 'axios';
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, 'confirmed');
 const RECIPIENT_PRIVATE_KEY = "Enter token recipient's private key."; 
@@ -909,7 +909,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const buyDexSingle = async () => {
-  const URL = "https://api.pumpvial.com/dex-single-buy";
+  const URL = "https://api.pumpagent.com/dex-single-buy";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -938,7 +938,7 @@ import bs58 from "bs58";
 import axios from 'axios';
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const RPC_URL = ""; // Visit Helius.dev
 const connection = new Connection(RPC_URL, 'confirmed');
 const RECIPIENT_PRIVATE_KEY = "Enter token recipient's private key."; 
@@ -952,7 +952,7 @@ const payload = {
 //////////////////////////////// END ////////////////////////////////////////
 
 const sellDexSingle = async () => {
-  const URL = "https://api.pumpvial.com/dex-single-sell";
+  const URL = "https://api.pumpagent.com/dex-single-sell";
 
   try {
     const request = await axios.post(URL, payload, {
@@ -979,12 +979,12 @@ export const httpsServerDexPaid = `
 import axios from "axios";
 
 /////////////////////////////// CONFIG //////////////////////////////////////
-const API_KEY = process.env.PUMPVIAL_API_KEY;
+const API_KEY = process.env.PUMPAGENT_API_KEY;
 const ca = "7iagMTDPfNSR5zVcERT1To7A9eaQoz58dJAh42EMHcCC";
 //////////////////////////////// END ////////////////////////////////////////
 
 const checkDexPaid = async () => {
-  const URL = "https://api.pumpvial.com/dex-paid";
+  const URL = "https://api.pumpagent.com/dex-paid";
 
   try {
     const request = await axios.post(URL, { ca }, {
@@ -1006,7 +1006,7 @@ checkDexPaid();`;
 export const webSocketServerTokenMigration = `
 import io from "socket.io-client";
 
-const socket = io("wss://ws.pumpvial.com");
+const socket = io("wss://ws.pumpagent.com");
 
 socket.on("connect", () => console.log("Connected to WebSocket."));
 
@@ -1026,7 +1026,7 @@ process.on("SIGINT", () => {
 export const webSocketServerTokenCreation = `
 import io from "socket.io-client";
 
-const socket = io("wss://ws.pumpvial.com");
+const socket = io("wss://ws.pumpagent.com");
 
 socket.on("connect", () => console.log("Connected to WebSocket."));
 
@@ -1052,7 +1052,7 @@ const mints = [
   "4ZTRU5K5js4Tqjo9B2soBiDYscfgg8ULNktREWy6pump"
 ];
 
-const socket = io("wss://ws.pumpvial.com", {
+const socket = io("wss://ws.pumpagent.com", {
   query: {
     mints: JSON.stringify(mints),
   },
@@ -1082,7 +1082,7 @@ const users = [
   "2Ttzp7pNJ3vUgdTwemMFXUUnV73HuYt8RBvqUpATQPNN",
 ];
 
-const socket = io("wss://ws.pumpvial.com", {
+const socket = io("wss://ws.pumpagent.com", {
   query: {
     users: JSON.stringify(users),
   },
@@ -1106,7 +1106,7 @@ process.on("SIGINT", () => {
 export const webSocketServerPoolCreation = `
 import io from "socket.io-client";
 
-const socket = io("wss://ws.pumpvial.com");
+const socket = io("wss://ws.pumpagent.com");
 
 socket.on("connect", () => console.log("Connected to WebSocket."));
 
@@ -1132,7 +1132,7 @@ const pools = [
   "4ZTRU5K5js4Tqjo9B2soBiDYscfgg8ULNktREWy6pump"
 ];
 
-const socket = io("wss://ws.pumpvial.com", {
+const socket = io("wss://ws.pumpagent.com", {
   query: {
     pools: JSON.stringify(pools),
   },
@@ -1156,7 +1156,7 @@ process.on("SIGINT", () => {
 export const webSocketServerKOLTrades = `
 import io from "socket.io-client";
 
-const socket = io("wss://ws.pumpvial.com");
+const socket = io("wss://ws.pumpagent.com");
 
 socket.on("connect", () => console.log("Connected to WebSocket."));
 
@@ -1176,7 +1176,7 @@ process.on("SIGINT", () => {
 export const webSocketServerPoolKOLTrades = `
 import io from "socket.io-client";
 
-const socket = io("wss://ws.pumpvial.com");
+const socket = io("wss://ws.pumpagent.com");
 
 socket.on("connect", () => console.log("Connected to WebSocket."));
 

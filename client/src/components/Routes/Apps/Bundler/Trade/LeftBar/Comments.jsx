@@ -20,7 +20,7 @@ const Comments = ({ userData, leftBarHeight, ca }) => {
     const fetchReplies = async () => {
       try {
         const response = await fetch(
-          "https://api.pumpvial.com/comment-thread",
+          "https://api.pumpagent.com/comment-thread",
           {
             method: "POST",
             headers: {

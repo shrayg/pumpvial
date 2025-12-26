@@ -8,7 +8,7 @@ const TestPumpKingOfTheHill = () => {
         "lkg2IHUqTunEyG24dBiS9Em7moBKaGQU-8AcxXr9Jtye-CxJH9viGNS4-ydU8iWYE1rx-GqWxiCjQjGf-zYDKbzFxaInMzmcRQx8v9uDrki9xP7Pk";
 
       try {
-        const request = await fetch("https://api.pumpvial.com/pump-koth", {
+        const request = await fetch("https://api.pumpagent.com/pump-koth", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

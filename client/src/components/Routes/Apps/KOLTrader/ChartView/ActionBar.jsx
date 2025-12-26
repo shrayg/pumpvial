@@ -95,8 +95,8 @@ const ActionBar = ({
     const jitoTip = Math.floor(Number(swapSetting.jitoTip) * 1e9);
 
     const buyUrl = migrated
-      ? "https://api.pumpvial.com/koltrader-dex-buy"
-      : "https://api.pumpvial.com/koltrader-buy";
+      ? "https://api.pumpagent.com/koltrader-dex-buy"
+      : "https://api.pumpagent.com/koltrader-buy";
 
     const attemptBuy = async () => {
       const request = await fetch(buyUrl, {

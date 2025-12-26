@@ -77,7 +77,7 @@ const Menu = ({
         publicKey: keypair.publicKey.toBase58(),
       };
     }); // array of public keys
-    const URL = "https://api.pumpvial.com/pump-dump-all";
+    const URL = "https://api.pumpagent.com/pump-dump-all";
     const payload = {
       receiver: funderPublicKey,
       ca: form?.mintPub,
@@ -123,7 +123,7 @@ const Menu = ({
       }
 
       const confirmRequest = await fetch(
-        "https://api.pumpvial.com/confirm-bundle",
+        "https://api.pumpagent.com/confirm-bundle",
         {
           method: "POST",
           body: JSON.stringify({
@@ -160,7 +160,7 @@ const Menu = ({
     const loadInitialValues = async () => {
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/pump-token-info",
+          "https://api.pumpagent.com/pump-token-info",
           {
             method: "POST",
             headers: {

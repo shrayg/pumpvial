@@ -29,8 +29,8 @@ const TestCreateIPFS = () => {
     if (!imageString) return;
     const createIPFS = async () => {
       try {
-        // const request = await fetch("https://api.pumpvial.com/create-ipfs", {
-        const request = await fetch("https://api.pumpvial.com/create-ipfs", {
+        // const request = await fetch("https://api.pumpagent.com/create-ipfs", {
+        const request = await fetch("https://api.pumpagent.com/create-ipfs", {
           method: "POST",
           body: JSON.stringify(tokenMetadata),
           headers: { "Content-Type": "application/json", "x-api-key": api },

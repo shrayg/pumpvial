@@ -15,12 +15,12 @@ const FundWallets = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Fund Wallets</title>
-        <link rel="canonical" href="https://pumpvial.com/https/fund-wallets" />
-        <meta property="og:title" content="PumpVial - Fund Wallets" />
+        <title>PumpAgent - Fund Wallets</title>
+        <link rel="canonical" href="https://pumpagent.com/https/fund-wallets" />
+        <meta property="og:title" content="PumpAgent - Fund Wallets" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/fund-wallets"
+          content="https://pumpagent.com/https/fund-wallets"
         />
       </Helmet>
       <Pagination />

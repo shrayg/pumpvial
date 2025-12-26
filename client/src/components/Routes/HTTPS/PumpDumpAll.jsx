@@ -22,12 +22,12 @@ const PumpDumpAll = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Pump Dump All</title>
-        <link rel="canonical" href="https://pumpvial.com/https/pump-dump-all" />
-        <meta property="og:title" content="PumpVial - Pump Dump All" />
+        <title>PumpAgent - Pump Dump All</title>
+        <link rel="canonical" href="https://pumpagent.com/https/pump-dump-all" />
+        <meta property="og:title" content="PumpAgent - Pump Dump All" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/pump-dump-all"
+          content="https://pumpagent.com/https/pump-dump-all"
         />
       </Helmet>
       <Pagination />

@@ -205,7 +205,7 @@ const Chart = ({ currentTrade, apiKey, solPrice }) => {
     const fetchChart = async () => {
       if (!pool) return;
       try {
-        const res = await fetch("https://api.pumpvial.com/pumpswap-chart", {
+        const res = await fetch("https://api.pumpagent.com/pumpswap-chart", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -7,7 +7,7 @@ const ca = "2N1tLUPf7XSz7DHkUieaJE9g8DSFPtx6FBW7kAr9Nodb";
 //////////////////////////////// END ////////////////////////////////////////
 
 const getPumpTokenInfo = async () => {
-  //   const URL = "https://api.pumpvial.com/token-info";
+  //   const URL = "https://api.pumpagent.com/token-info";
   const URL = "http://localhost:3000/token-info";
 
   try {

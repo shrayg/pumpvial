@@ -78,7 +78,7 @@ const KOLTrader = () => {
     if (!user) return;
     const loadUser = async () => {
       try {
-        const request = await fetch("https://api.pumpvial.com/load-koltrader", {
+        const request = await fetch("https://api.pumpagent.com/load-koltrader", {
           method: "POST",
           body: JSON.stringify({
             proof,
@@ -318,7 +318,7 @@ const KOLTrader = () => {
   return (
     <div className="flex h-full flex-col w-full mx-auto">
       <div className="flex w-full h-full opacity-100 xl:hidden justify-center items-center text-[12px] text-gray-500">
-        <span>PumpVial DEX is only availabe on desktop.</span>
+        <span>PumpAgent DEX is only availabe on desktop.</span>
       </div>
       <div className="h-full flex-col w-full mx-auto hidden xl:flex">
         {/* <NewCreationsBar

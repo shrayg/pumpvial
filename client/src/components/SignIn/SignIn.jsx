@@ -72,7 +72,7 @@ const SignIn = () => {
       });
       if (error) throw new Error(error);
 
-      const request = await fetch("https://api.pumpvial.com/sign-up", {
+      const request = await fetch("https://api.pumpagent.com/sign-up", {
         method: "POST",
         body: JSON.stringify({
           username,
@@ -105,10 +105,10 @@ const SignIn = () => {
   return (
     <div className="h-full flex items-center justify-center bg-black text-white">
       <Helmet>
-        <title>PumpVial - Sign In</title>
-        <link rel="canonical" href="https://pumpvial.com/signin" />
-        <meta property="og:title" content="PumpVial - Sign In" />
-        <meta property="og:url" content="https://pumpvial.com/signin" />
+        <title>PumpAgent - Sign In</title>
+        <link rel="canonical" href="https://pumpagent.com/signin" />
+        <meta property="og:title" content="PumpAgent - Sign In" />
+        <meta property="og:url" content="https://pumpagent.com/signin" />
       </Helmet>
       <form className="w-[300px] text-[12px] border border-gray-800 dark:border-gray-200 bg-tile dark:bg-white rounded-md p-4 flex relative flex-col items-center gap-8 mb-20">
         <h2 className="text-2xl font-bold mb-2 text-center">

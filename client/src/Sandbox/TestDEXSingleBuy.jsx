@@ -16,7 +16,7 @@ const TestDEXSingleBuy = () => {
   useEffect(() => {
     // return;
     const buyDexSingle = async () => {
-      const URL = "https://api.pumpvial.com/dex-single-buy";
+      const URL = "https://api.pumpagent.com/dex-single-buy";
       const payload = {
         recipient: recipient.publicKey,
         ca: "7iagMTDPfNSR5zVcERT1To7A9eaQoz58dJAh42EMHcCC",

@@ -62,7 +62,7 @@ const OpenPositions = ({
       try {
         // Get held balances from the chain
         const request = await fetch(
-          "https://api.pumpvial.com/load-openpositions",
+          "https://api.pumpagent.com/load-openpositions",
 
           {
             method: "POST",
@@ -194,8 +194,8 @@ const OpenPositions = ({
     const migrated = trackedPoolTrades[ca] || toClose.migrated;
 
     const sellUrl = migrated
-      ? "https://api.pumpvial.com/koltrader-dex-sell"
-      : "https://api.pumpvial.com/koltrader-sell";
+      ? "https://api.pumpagent.com/koltrader-dex-sell"
+      : "https://api.pumpagent.com/koltrader-sell";
 
     let attempt = 0;
     const maxRetries = retryEnabled ? 2 : 0;

@@ -1,6 +1,6 @@
 export const tokenBumpEnvCode = `
 PORT=3000
-PUMPVIAL_API_KEY="ENTER YOUR PUMPVIAL API KEY HERE"
+PUMPAGENT_API_KEY="ENTER YOUR PUMPAGENT API KEY HERE"
 HELIUS_API_KEY="ENTER YOUR HELIUS API KEY HERE"
 SUPABASE_URL=""
 SUPABASE_SERVICE_KEY=""
@@ -82,13 +82,13 @@ const runBumpProcess = (ca, duration, bumpWallet, user) => {
 
 // Token bump function
 const bumpToken = async (payload, recipient) => {
-  const URL = "https://api.pumpvial.com/pump-token-bump";
+  const URL = "https://api.pumpagent.com/pump-token-bump";
 
   try {
     const request = await axios.post(URL, payload, {
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.PUMPVIAL_API_KEY,
+        "x-api-key": process.env.PUMPAGENT_API_KEY,
       },
     });
 
@@ -109,10 +109,10 @@ const bumpToken = async (payload, recipient) => {
 const createPaymentInstance = async (ca, plan, user) => {
   try {
     const request = await axios.post(
-      "https://api.pumpvial.com/generate-wallets", { amount: 1 }, {
+      "https://api.pumpagent.com/generate-wallets", { amount: 1 }, {
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": process.env.PUMPVIAL_API_KEY,
+          "x-api-key": process.env.PUMPAGENT_API_KEY,
         }}
     );
 
@@ -133,7 +133,7 @@ const createPaymentInstance = async (ca, plan, user) => {
   }
 };
 
-// Claim profits to your PumpVial dashboard
+// Claim profits to your PumpAgent dashboard
 const claimProfits = async (checkout) => {
   try {
     const funderKeypair = Keypair.fromSecretKey(bs58.decode(checkout.paymentWallet.privateKey));
@@ -144,11 +144,11 @@ const claimProfits = async (checkout) => {
       solIn,
     };
 
-    const URL = "https://api.pumpvial.com/claim-profits";
+    const URL = "https://api.pumpagent.com/claim-profits";
     const request = await axios.post(URL, payload, {
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.PUMPVIAL_API_KEY,
+        "x-api-key": process.env.PUMPAGENT_API_KEY,
       },
     });
 
@@ -208,13 +208,13 @@ const confirmPayment = async (user) => {
 
 // Validate if token is within it's bonding curve
 const checkIfStillBonding = async (ca) => {
-  const URL = "https://api.pumpvial.com/pump-bonding-curve";
+  const URL = "https://api.pumpagent.com/pump-bonding-curve";
 
   try {
     const request = await axios.post(URL, { ca }, {
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": process.env.PUMPVIAL_API_KEY,
+          "x-api-key": process.env.PUMPAGENT_API_KEY,
         },
       }
     );
@@ -304,7 +304,7 @@ const createPaymentInstance = async (ca, plan, user) => {
       {
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": process.env.PUMPVIAL_API_KEY,
+          "x-api-key": process.env.PUMPAGENT_API_KEY,
         },
       }
     );
@@ -355,7 +355,7 @@ const confirmPayment = async (user) => {
     });
     if (error) throw new Error(error);
 
-    // Withdraw profits to your PumpVial dashboard
+    // Withdraw profits to your PumpAgent dashboard
     await claimProfits(checkout);
 
     return { success: true, ca, duration, bumpWallet: checkout.paymentWallet };

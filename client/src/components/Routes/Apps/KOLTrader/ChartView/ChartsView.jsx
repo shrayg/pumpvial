@@ -102,7 +102,7 @@ const ChartsView = ({
       for (const mint of missingMints) {
         try {
           const request = await fetch(
-            "https://api.pumpvial.com/pump-token-info",
+            "https://api.pumpagent.com/pump-token-info",
             {
               method: "POST",
               headers: {
@@ -140,7 +140,7 @@ const ChartsView = ({
           const creationTime = Math.floor(info.created_timestamp / 1000);
 
           const chartRequest = await fetch(
-            "https://api.pumpvial.com/pumpswap-chart",
+            "https://api.pumpagent.com/pumpswap-chart",
             {
               method: "POST",
               headers: {

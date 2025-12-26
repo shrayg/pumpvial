@@ -16,15 +16,15 @@ const PumpSingleSell = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Pump Single Sell</title>
+        <title>PumpAgent - Pump Single Sell</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/https/pump-single-sell"
+          href="https://pumpagent.com/https/pump-single-sell"
         />
-        <meta property="og:title" content="PumpVial - Pump Single Sell" />
+        <meta property="og:title" content="PumpAgent - Pump Single Sell" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/pump-single-sell"
+          content="https://pumpagent.com/https/pump-single-sell"
         />
       </Helmet>
       <Pagination />

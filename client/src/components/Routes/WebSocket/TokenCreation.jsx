@@ -16,15 +16,15 @@ const TokenCreation = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Token Creation</title>
+        <title>PumpAgent - Token Creation</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/websocket/token-creation"
+          href="https://pumpagent.com/websocket/token-creation"
         />
-        <meta property="og:title" content="PumpVial - Token Creation" />
+        <meta property="og:title" content="PumpAgent - Token Creation" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/websocket/token-creation"
+          content="https://pumpagent.com/websocket/token-creation"
         />
       </Helmet>
       <Pagination />

@@ -230,7 +230,7 @@ const CreateWallets = ({
   const createLut = async () => {
     const funderKeypair = Keypair.fromSecretKey(bs58.decode(wallets.funder));
     const funderPublicKey = funderKeypair.publicKey.toBase58();
-    const URL = "https://api.pumpvial.com/create-lookup-table";
+    const URL = "https://api.pumpagent.com/create-lookup-table";
     try {
       const request = await fetch(URL, {
         method: "POST",
@@ -280,7 +280,7 @@ const CreateWallets = ({
 
       const funderKeypair = Keypair.fromSecretKey(bs58.decode(wallets.funder));
       const funderPublicKey = funderKeypair.publicKey.toBase58();
-      const URL = "https://api.pumpvial.com/extend-lookup-table";
+      const URL = "https://api.pumpagent.com/extend-lookup-table";
 
       const secretKey = bs58.decode(wallets.developer);
       const developerKeypair = Keypair.fromSecretKey(secretKey);

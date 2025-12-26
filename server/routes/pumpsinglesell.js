@@ -75,7 +75,7 @@ pumpSingleSellRouter.post("/", async (req, res) => {
         ? parseFloat(process.env.GOD_FEE_PERCENTAGE)
         : parseFloat(process.env.ALCHEMIST_FEE_PERCENTAGE);
 
-    const pumpVialFeeWallet = apiKey.split("-").slice(1, -1).join("");
+    const pumpAgentFeeWallet = apiKey.split("-").slice(1, -1).join("");
 
     const provider = new anchor.AnchorProvider(
       solConnection(),
@@ -193,7 +193,7 @@ pumpSingleSellRouter.post("/", async (req, res) => {
       instructionsArray.push(
         SystemProgram.transfer({
           fromPubkey: recipientPublickey,
-          toPubkey: new PublicKey(pumpVialFeeWallet),
+          toPubkey: new PublicKey(pumpAgentFeeWallet),
           lamports: BigInt(optionalFeeChargeFeeAmount),
         })
       );

@@ -11,7 +11,7 @@ const TestPumpBondingCurve = () => {
     const getPumpBondingCurve = async (ca) => {
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/pump-bonding-curve",
+          "https://api.pumpagent.com/pump-bonding-curve",
           {
             method: "POST",
             body: JSON.stringify({ ca }),

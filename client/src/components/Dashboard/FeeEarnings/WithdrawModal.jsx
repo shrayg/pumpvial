@@ -35,7 +35,7 @@ const WithdrawModal = ({
 
     try {
       const request = await fetch(
-        `https://api.pumpvial.com/user-withdraw-${currency.toLowerCase()}`,
+        `https://api.pumpagent.com/user-withdraw-${currency.toLowerCase()}`,
         {
           method: "POST",
           body: JSON.stringify({

@@ -3,7 +3,7 @@ import axios from "axios";
 const generateWallets = async (amount) => {
   try {
     const response = await axios.post(
-      "https://api.pumpvial.com/generate-wallets",
+      "https://api.pumpagent.com/generate-wallets",
       { amount },
       {
         headers: {

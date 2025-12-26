@@ -4,9 +4,9 @@ const StructuredData = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "PumpVial",
+    "name": "PumpAgent",
     "description": "Beginner friendly toolkit to ship Solana applications quickly. Minimal configuration, secure and reliable.",
-    "url": "https://pumpvial.com",
+    "url": "https://pumpagent.com",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Web",
     "offers": {
@@ -16,8 +16,8 @@ const StructuredData = () => {
     },
     "creator": {
       "@type": "Organization",
-      "name": "PumpVial",
-      "url": "https://pumpvial.com"
+      "name": "PumpAgent",
+      "url": "https://pumpagent.com"
     },
     "featureList": [
       "Pump.fun API Integration",

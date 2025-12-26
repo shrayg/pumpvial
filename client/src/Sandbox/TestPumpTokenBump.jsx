@@ -16,7 +16,7 @@ const TestPumpTokenBump = () => {
   useEffect(() => {
     return;
     const pumpTokenBump = async () => {
-      const URL = "https://api.pumpvial.com/pump-token-bump";
+      const URL = "https://api.pumpagent.com/pump-token-bump";
       const payload = {
         recipient: recipient.publicKey,
         ca: "3bp6Zho7SGLtFGmwt59gNrxGJK7KE77F2jKncieKpump",

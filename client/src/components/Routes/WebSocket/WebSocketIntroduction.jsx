@@ -6,15 +6,15 @@ const WebSocketIntroduction = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - WebSocket Introduction</title>
+        <title>PumpAgent - WebSocket Introduction</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/websocket/introduction"
+          href="https://pumpagent.com/websocket/introduction"
         />
-        <meta property="og:title" content="PumpVial - WebSocket Introduction" />
+        <meta property="og:title" content="PumpAgent - WebSocket Introduction" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/websocket/introduction"
+          content="https://pumpagent.com/websocket/introduction"
         />
       </Helmet>
       <Pagination />

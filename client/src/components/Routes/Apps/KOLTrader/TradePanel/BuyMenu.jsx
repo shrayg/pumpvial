@@ -86,8 +86,8 @@ const BuyMenu = ({
     const migrated = trackedPoolTrades[ca] || activeTab.migrated;
 
     const buyUrl = migrated
-      ? "https://api.pumpvial.com/koltrader-dex-buy"
-      : "https://api.pumpvial.com/koltrader-buy";
+      ? "https://api.pumpagent.com/koltrader-dex-buy"
+      : "https://api.pumpagent.com/koltrader-buy";
 
     setTradeLoad(true);
     const startTime = performance.now();

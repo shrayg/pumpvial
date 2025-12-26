@@ -355,7 +355,7 @@ export async function getWalletSolBalances(wallets) {
   }
 
   try {
-    const response = await fetch("https://api.pumpvial.com/sol-balances", {
+    const response = await fetch("https://api.pumpagent.com/sol-balances", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -382,7 +382,7 @@ export async function getWalletTokenBalances(wallets, ca) {
 
   try {
     const response = await fetch(
-      "https://api.pumpvial.com/get-mint-balances-for-holders",
+      "https://api.pumpagent.com/get-mint-balances-for-holders",
       {
         method: "POST",
         headers: {

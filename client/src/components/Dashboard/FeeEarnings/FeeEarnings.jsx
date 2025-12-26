@@ -44,10 +44,10 @@ const FeeEarnings = ({
   return (
     <div className="w-full mt-8 md:mt-14 px-4 md:px-10 max-w-[1048px] mb-4">
       <Helmet>
-        <title>PumpVial - Fee Earnings</title>
-        <link rel="canonical" href="https://pumpvial.com/dashboard" />
-        <meta property="og:title" content="PumpVial - Fee Earnings" />
-        <meta property="og:url" content="https://pumpvial.com/dashboard" />
+        <title>PumpAgent - Fee Earnings</title>
+        <link rel="canonical" href="https://pumpagent.com/dashboard" />
+        <meta property="og:title" content="PumpAgent - Fee Earnings" />
+        <meta property="og:url" content="https://pumpagent.com/dashboard" />
       </Helmet>
       {notFunded && message && (
         <div className="w-full h-10 border border-gray-800 dark:border-gray-200 bg-tile dark:bg-white dark:hover:bg-[#fff] rounded-md relativeitems-start px-4 py-4 flex mb-2 justify-between items-center">

@@ -43,7 +43,7 @@ const BumpBotExample = () => {
   const confirmPayment = async () => {
     setLoading(true);
     try {
-      // const request = await fetch("https://api.pumpvial.com/confirm-payment", {
+      // const request = await fetch("https://api.pumpagent.com/confirm-payment", {
       //   method: "POST",
       //   body: JSON.stringify({
       //     user,

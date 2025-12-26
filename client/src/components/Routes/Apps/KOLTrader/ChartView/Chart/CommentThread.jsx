@@ -21,7 +21,7 @@ const CommentThread = ({ ca, apiKey, replies, setReplies, data, height }) => {
 
       try {
         const response = await fetch(
-          "https://api.pumpvial.com/comment-thread",
+          "https://api.pumpagent.com/comment-thread",
           {
             method: "POST",
             headers: {

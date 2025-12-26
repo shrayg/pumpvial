@@ -36,7 +36,7 @@ const SearchCoin = ({
   const searchToken = async () => {
     try {
       setLoading(true);
-      const request = await fetch("https://api.pumpvial.com/pump-token-info", {
+      const request = await fetch("https://api.pumpagent.com/pump-token-info", {
         method: "POST",
         body: JSON.stringify({ ca: searchValue }),
         headers: { "Content-Type": "application/json" },

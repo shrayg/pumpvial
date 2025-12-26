@@ -8,7 +8,7 @@ const RECIPIENT_PRIVATE_KEY = "Enter token recipient's private key.";
 const recipient = Keypair.fromSecretKey(bs58.decode(RECIPIENT_PRIVATE_KEY));
 
 const buyDexSingle = async () => {
-  const URL = "https://api.pumpvial.com/dex-single-sell";
+  const URL = "https://api.pumpagent.com/dex-single-sell";
   const payload = {
     recipient: recipient.publicKey,
     ca: "7iagMTDPfNSR5zVcERT1To7A9eaQoz58dJAh42EMHcCC",

@@ -16,15 +16,15 @@ const KOLTrades = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - KOL Trades</title>
+        <title>PumpAgent - KOL Trades</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/websocket/kol-trades"
+          href="https://pumpagent.com/websocket/kol-trades"
         />
-        <meta property="og:title" content="PumpVial - KOL Trades" />
+        <meta property="og:title" content="PumpAgent - KOL Trades" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/websocket/kol-trades"
+          content="https://pumpagent.com/websocket/kol-trades"
         />
       </Helmet>
       <Pagination />

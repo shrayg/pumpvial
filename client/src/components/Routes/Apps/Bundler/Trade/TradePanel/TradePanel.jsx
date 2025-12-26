@@ -143,7 +143,7 @@ const TradePanel = ({
     try {
       // Create transaction
       const createRequest = await fetch(
-        "https://api.pumpvial.com/create-pumpfun-buy-transaction",
+        "https://api.pumpagent.com/create-pumpfun-buy-transaction",
         {
           method: "POST",
           body: JSON.stringify({
@@ -172,7 +172,7 @@ const TradePanel = ({
       );
 
       const confirmRequest = await fetch(
-        "https://api.pumpvial.com/confirm-transaction",
+        "https://api.pumpagent.com/confirm-transaction",
         {
           method: "POST",
           body: JSON.stringify({
@@ -251,7 +251,7 @@ const TradePanel = ({
     try {
       // Create transaction
       const createRequest = await fetch(
-        "https://api.pumpvial.com/create-pumpfun-sell-transaction",
+        "https://api.pumpagent.com/create-pumpfun-sell-transaction",
         {
           method: "POST",
           body: JSON.stringify({
@@ -280,7 +280,7 @@ const TradePanel = ({
       );
 
       const confirmRequest = await fetch(
-        "https://api.pumpvial.com/confirm-transaction",
+        "https://api.pumpagent.com/confirm-transaction",
         {
           method: "POST",
           body: JSON.stringify({

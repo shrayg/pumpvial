@@ -34,7 +34,7 @@ const sanitizedWallets = fullWalletData.map(({ privateKey, ...rest }) => rest);
 const lut = "HhwJF8rZnpj8jEYBmVDdSFNiJrxYtRMDHg2Xxztcvohq";
 
 const pumpLaunchBundle = async () => {
-  const URL = "https://api.pumpvial.com/pump-launch-token";
+  const URL = "https://api.pumpagent.com/pump-launch-token";
   const payload = {
     developer: developer.publicKey,
     solIn: "0.001",

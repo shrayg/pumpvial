@@ -27,7 +27,7 @@ const Speed = () => {
     // Otherwise, fetch fresh data
     const fetchLandingInfo = async () => {
       try {
-        const res = await fetch("https://api.pumpvial.com/landing-info");
+        const res = await fetch("https://api.pumpagent.com/landing-info");
         if (!res.ok) throw new Error("Network response was not ok");
         const data = await res.json();
         setLandingData(data);

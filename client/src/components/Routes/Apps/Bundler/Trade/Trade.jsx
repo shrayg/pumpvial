@@ -27,7 +27,7 @@ const Trade = ({
     while (attempts <= maxRetries) {
       try {
         const chartRequest = await fetch(
-          "https://api.pumpvial.com/pumpswap-chart",
+          "https://api.pumpagent.com/pumpswap-chart",
           {
             method: "POST",
             headers: {

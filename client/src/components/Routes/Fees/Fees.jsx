@@ -21,7 +21,7 @@ const apprenticeFeeData = [
     name: "Claim Profits",
     route: "/claim-profits",
     fee: "None",
-    description: "Securely transfer profits to your PumpVial Dashboard.",
+    description: "Securely transfer profits to your PumpAgent Dashboard.",
     limit: "5K/Hour",
   },
   {
@@ -170,7 +170,7 @@ const alchemistFeeData = [
     name: "Claim Profits",
     route: "/claim-profits",
     fee: "None",
-    description: "Securely transfer profits to your PumpVial Dashboard.",
+    description: "Securely transfer profits to your PumpAgent Dashboard.",
     limit: "Unlimited",
   },
   {
@@ -309,15 +309,15 @@ const Fees = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Fees</title>
-        <link rel="canonical" href="https://pumpvial.com/fees" />
-        <meta property="og:title" content="PumpVial - Fees" />
-        <meta property="og:url" content="https://pumpvial.com/fees" />
+        <title>PumpAgent - Fees</title>
+        <link rel="canonical" href="https://pumpagent.com/fees" />
+        <meta property="og:title" content="PumpAgent - Fees" />
+        <meta property="og:url" content="https://pumpagent.com/fees" />
       </Helmet>
       <Pagination />
       <h1 className="text-6xl dark:text-black pb-8">Fees</h1>
       <p className="text-[20px] font-light leading-7 mb-8 dark:text-black">
-        Usage of the PumpVial platform is completely free of charge, sign up for
+        Usage of the PumpAgent platform is completely free of charge, sign up for
         an account and start building right away.
       </p>
       <div className="text-[20px] font-light leading-7 mb-8 dark:text-black">
@@ -341,7 +341,7 @@ const Fees = () => {
         payouts are done in USDC.
       </p>
       <p className="text-[20px] leading-7 dark:text-black font-bold text-center">
-        Claiming profits from your PumpVial dashboard is free of charge.
+        Claiming profits from your PumpAgent dashboard is free of charge.
       </p>
 
       <div className="flex flex-col justify-center items-center gap-3 my-8 border border-gray-900 w-min mx-auto p-3 rounded-xl">

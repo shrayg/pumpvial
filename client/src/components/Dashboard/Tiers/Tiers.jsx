@@ -15,10 +15,10 @@ const Tiers = ({ userData, setUserData }) => {
   return (
     <div className="w-full mt-8 md:mt-14 px-4 md:px-10 max-w-[1048px] mb-4">
       <Helmet>
-        <title>PumpVial - Tiers</title>
-        <link rel="canonical" href="https://pumpvial.com/dashboard" />
-        <meta property="og:title" content="PumpVial - Tiers" />
-        <meta property="og:url" content="https://pumpvial.com/dashboard" />
+        <title>PumpAgent - Tiers</title>
+        <link rel="canonical" href="https://pumpagent.com/dashboard" />
+        <meta property="og:title" content="PumpAgent - Tiers" />
+        <meta property="og:url" content="https://pumpagent.com/dashboard" />
       </Helmet>
       {/* Plan modals*/}
       {isApprentice && !checkingOut && (
@@ -80,7 +80,7 @@ const Tiers = ({ userData, setUserData }) => {
                 Increased Rate Limits
               </li>
               <li className="bg-[#33333381] dark:bg-[#3333331e] p-2 rounded-md px-4 text-greener">
-                30% Reduced PumpVial Platform Fees
+                30% Reduced PumpAgent Platform Fees
               </li>
               <li className="bg-[#33333381] dark:bg-[#3333331e] p-2 rounded-md px-4">
                 Alchemist Role + Priority Technical Support in Discord

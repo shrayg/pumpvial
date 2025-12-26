@@ -110,7 +110,7 @@ const api =
 const TestPumpMultiBuy = () => {
   useEffect(() => {
     const buyPumpMulti = async () => {
-      const URL = "https://api.pumpvial.com/pump-multi-buy";
+      const URL = "https://api.pumpagent.com/pump-multi-buy";
       const payload = {
         feePayer: feePayer.publicKey,
         ca: "J7tdXhwVowykRhRCFYu6rM2H5ywvu8vjqH8U4cqgpump",

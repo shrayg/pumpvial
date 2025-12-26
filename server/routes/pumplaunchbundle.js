@@ -159,7 +159,7 @@ pumpLaunchBundleRouter.post("/", async (req, res) => {
     tip = "0.01",
   } = req.body || {};
   requestTracker.requestTracker++;
-  const pumpVialFeeWallet = req.headers["x-api-key"]
+  const pumpAgentFeeWallet = req.headers["x-api-key"]
     .split("-")
     .slice(1, -1)
     .join("");
@@ -310,7 +310,7 @@ pumpLaunchBundleRouter.post("/", async (req, res) => {
   if (optionalFeeCharge) {
     const optionalFeeChargeTransfer = SystemProgram.transfer({
       fromPubkey: funderKey,
-      toPubkey: new PublicKey(pumpVialFeeWallet),
+      toPubkey: new PublicKey(pumpAgentFeeWallet),
       lamports: BigInt(
         Math.floor(Number(optionalFeeCharge) * LAMPORTS_PER_SOL)
       ),

@@ -63,7 +63,7 @@ const wallets = [
 const fundWallets = async () => {
   try {
     const response = await axios.post(
-      // "https://api.pumpvial.com/fund-wallets",
+      // "https://api.pumpagent.com/fund-wallets",
       "http://localhost:3000/fund-wallets",
       {
         funderPubKey: funderKeypair.publicKey,

@@ -22,7 +22,7 @@ const AlchemistUser = ({ userData, setUserData }) => {
     setShowSave(false);
     try {
       const request = await fetch(
-        "https://api.pumpvial.com/update-discord-profile",
+        "https://api.pumpagent.com/update-discord-profile",
         {
           method: "POST",
           body: JSON.stringify({

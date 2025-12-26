@@ -3,7 +3,7 @@ const TextDEXPaid = () => {
     return;
 
     const checkDexPaid = async () => {
-      const URL = "https://api.pumpvial.com/dex-paid";
+      const URL = "https://api.pumpagent.com/dex-paid";
       const payload = {
         ca: "7iagMTDPfNSR5zVcERT1To7A9eaQoz58dJAh42EMHcCC",
       };

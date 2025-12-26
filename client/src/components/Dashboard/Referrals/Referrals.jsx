@@ -14,7 +14,7 @@ const Referrals = ({ userData }) => {
   const totalUSDPayout =
     referralPayouts.reduce((acc, val) => acc + val?.amount, 0) ?? 0;
 
-  const URL = `https://pumpvial.com?ref=${user}`;
+  const URL = `https://pumpagent.com?ref=${user}`;
 
   const handleCopy = () => {
     setCopied(true);
@@ -28,10 +28,10 @@ const Referrals = ({ userData }) => {
   return (
     <div className="w-full mt-8 md:mt-14 px-4 md:px-10 mb-4 max-w-[1048px]">
       <Helmet>
-        <title>PumpVial - Referrals</title>
-        <link rel="canonical" href="https://pumpvial.com/dashboard" />
-        <meta property="og:title" content="PumpVial - Referrals" />
-        <meta property="og:url" content="https://pumpvial.com/dashboard" />
+        <title>PumpAgent - Referrals</title>
+        <link rel="canonical" href="https://pumpagent.com/dashboard" />
+        <meta property="og:title" content="PumpAgent - Referrals" />
+        <meta property="og:url" content="https://pumpagent.com/dashboard" />
       </Helmet>
       <div className="w-full border border-gray-800 dark:border-gray-200 bg-tile dark:bg-white dark:hover:bg-[#fff] rounded-md relative p-5 md:p-10 py-2 md:py-12 flex-col md:flex-row flex gap-2  justify-start items-start md:h-[280px]">
         <div className="flex pb-4 md:pb-0 flex-col gap-4 md:w-[232px] h-full pt-4">

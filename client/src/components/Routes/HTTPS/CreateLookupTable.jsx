@@ -27,15 +27,15 @@ const CreateLookupTable = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Create Lookup Table</title>
+        <title>PumpAgent - Create Lookup Table</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/https/create-lookup-table"
+          href="https://pumpagent.com/https/create-lookup-table"
         />
-        <meta property="og:title" content="PumpVial - Create Lookup Table" />
+        <meta property="og:title" content="PumpAgent - Create Lookup Table" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/create-lookup-table"
+          content="https://pumpagent.com/https/create-lookup-table"
         />
       </Helmet>
       <Pagination />

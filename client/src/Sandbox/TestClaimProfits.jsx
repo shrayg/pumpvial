@@ -20,7 +20,7 @@ const payload = {
 const TestClaimProfits = () => {
   useEffect(() => {
     const claimProfits = async () => {
-      const URL = "https://api.pumpvial.com/claim-profits";
+      const URL = "https://api.pumpagent.com/claim-profits";
 
       try {
         const request = await fetch(URL, {

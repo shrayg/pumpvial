@@ -6,7 +6,7 @@ const payload = {
 };
 
 const pumpChart = async () => {
-  // const URL = "https://api.pumpvial.com/pump-chart";
+  // const URL = "https://api.pumpagent.com/pump-chart";
   const URL = "http://localhost:3000/pump-chart";
 
   try {

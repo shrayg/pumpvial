@@ -29,7 +29,7 @@ const Wallet = ({
   // Get user sol balance
   const getBalance = async () => {
     try {
-      const request = await fetch("https://api.pumpvial.com/sol-balance", {
+      const request = await fetch("https://api.pumpagent.com/sol-balance", {
         method: "POST",
         body: JSON.stringify({
           wallet: traderWallet,
@@ -69,7 +69,7 @@ const Wallet = ({
 
     try {
       const request = await fetch(
-        "https://api.pumpvial.com/create-koltrade-wallet",
+        "https://api.pumpagent.com/create-koltrade-wallet",
         {
           method: "POST",
           body: JSON.stringify({

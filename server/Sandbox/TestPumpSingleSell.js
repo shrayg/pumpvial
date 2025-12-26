@@ -13,7 +13,7 @@ const optionalFeeCharge = {
 };
 
 const sellPumpSingle = async () => {
-  const URL = "https://api.pumpvial.com/pump-single-sell";
+  const URL = "https://api.pumpagent.com/pump-single-sell";
   const payload = {
     recipient: recipient.publicKey,
     ca: "93xHZCeaRxL7iwRQUPcW7utRbKF5UhMmaSQW9pdEpump",

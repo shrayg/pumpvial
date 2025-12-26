@@ -61,7 +61,7 @@ pumpMultiBuyRouter.post("/", async (req, res) => {
   requestTracker.totalRequests++;
 
   const apiKey = req.headers["x-api-key"];
-  const pumpVialFeeWallet = apiKey.split("-").slice(1, -1).join("");
+  const pumpAgentFeeWallet = apiKey.split("-").slice(1, -1).join("");
   const feePayerPublickey = new PublicKey(feePayer);
   const mintPublickey = new PublicKey(ca);
 
@@ -132,9 +132,9 @@ pumpMultiBuyRouter.post("/", async (req, res) => {
   const totalSolInLamports =
     wallets.reduce((acc, val) => acc + Number(val.solBuy), 0) *
     LAMPORTS_PER_SOL;
-  const pumpVialPlatformFeesLamports = PLATFORM_FEE * totalSolInLamports;
+  const pumpAgentPlatformFeesLamports = PLATFORM_FEE * totalSolInLamports;
   const totalSolAfterPlatformFeesLamports =
-    totalSolInLamports - pumpVialPlatformFeesLamports;
+    totalSolInLamports - pumpAgentPlatformFeesLamports;
 
   // Optional user defined fees in lamports or 0
   const optionalFeeChargeFeeLamports = optionalFeeCharge
@@ -230,20 +230,20 @@ pumpMultiBuyRouter.post("/", async (req, res) => {
   // Platform fees
   const feeInstructionsArray = [];
 
-  // First wallet pays PumpVial platform fees
-  const pumpVialPlatformFeeInstruction = SystemProgram.transfer({
+  // First wallet pays PumpAgent platform fees
+  const pumpAgentPlatformFeeInstruction = SystemProgram.transfer({
     fromPubkey: feePayerPublickey,
     toPubkey: new PublicKey(process.env.FEE_WALLET),
-    lamports: BigInt(Math.floor(pumpVialPlatformFeesLamports)),
+    lamports: BigInt(Math.floor(pumpAgentPlatformFeesLamports)),
   });
 
-  feeInstructionsArray.push(pumpVialPlatformFeeInstruction);
+  feeInstructionsArray.push(pumpAgentPlatformFeeInstruction);
 
   // User optional fees
   if (optionalFeeChargeFeeLamports > 0) {
     const feeInstruction = SystemProgram.transfer({
       fromPubkey: feePayerPublickey,
-      toPubkey: new PublicKey(pumpVialFeeWallet),
+      toPubkey: new PublicKey(pumpAgentFeeWallet),
       lamports: BigInt(optionalFeeChargeFeeLamports),
     });
     feeInstructionsArray.push(feeInstruction);

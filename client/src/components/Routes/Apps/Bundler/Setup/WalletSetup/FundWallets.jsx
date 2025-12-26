@@ -197,7 +197,7 @@ const FundWalletsTable = ({
     try {
       const funderKeypair = Keypair.fromSecretKey(bs58.decode(wallets.funder));
 
-      const URL = "https://api.pumpvial.com/fund-wallets";
+      const URL = "https://api.pumpagent.com/fund-wallets";
       const request = await fetch(URL, {
         method: "POST",
         body: JSON.stringify({

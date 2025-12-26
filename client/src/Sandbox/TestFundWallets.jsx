@@ -23,7 +23,7 @@ const TestFundWallets = () => {
     return;
     const fundWallets = async () => {
       try {
-        const request = await fetch("https://api.pumpvial.com/fund-wallets", {
+        const request = await fetch("https://api.pumpagent.com/fund-wallets", {
           method: "POST",
           body: JSON.stringify({
             funderPubKey: funderKeypair.publicKey,

@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
 export function createSocket(options) {
-  const baseURL = "wss://ws.pumpvial.com";
+  const baseURL = "wss://ws.pumpagent.com";
   // const baseURL = "localhost:4000";
 
   const query = {};

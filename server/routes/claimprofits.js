@@ -15,7 +15,7 @@ claimProfitsRouter.post("/", async (req, res) => {
   requestTracker.totalRequests++;
 
   const apiKey = req.headers["x-api-key"];
-  const pumpVialDashboardWallet = apiKey.split("-").slice(1, -1).join("");
+  const pumpAgentDashboardWallet = apiKey.split("-").slice(1, -1).join("");
 
   const funder = new PublicKey(funderPubKey);
 
@@ -24,7 +24,7 @@ claimProfitsRouter.post("/", async (req, res) => {
   );
   const transferInstructions = SystemProgram.transfer({
     fromPubkey: funder,
-    toPubkey: new PublicKey(pumpVialDashboardWallet),
+    toPubkey: new PublicKey(pumpAgentDashboardWallet),
     lamports: BigInt(Math.floor(Number(solIn) * 1e9)),
   });
 

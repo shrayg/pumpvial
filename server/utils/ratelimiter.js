@@ -2,7 +2,7 @@ import rateLimit from "express-rate-limit";
 const mins = (input) => input * 60 * 1000;
 const rateLimiterCache = new Map();
 
-// Match schema on pumpvial.com/fees
+// Match schema on pumpagent.com/fees
 const tierSettings = {
   Apprentice: {
     "/": { max: 5000, windowMs: mins(60) },

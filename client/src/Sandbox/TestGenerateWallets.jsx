@@ -8,7 +8,7 @@ const TestGenerateWallets = () => {
     const generateWallets = async (amount) => {
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/generate-wallets",
+          "https://api.pumpagent.com/generate-wallets",
           {
             method: "POST",
             body: JSON.stringify({ amount }),

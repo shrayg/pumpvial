@@ -43,7 +43,7 @@ const Setup = ({
     try {
       const recipients = [wallets.developer, ...wallets.bundle];
 
-      const request = await fetch("https://api.pumpvial.com/reclaim-rent", {
+      const request = await fetch("https://api.pumpagent.com/reclaim-rent", {
         method: "POST",
         body: JSON.stringify({ recipients }),
         headers: {
@@ -69,7 +69,7 @@ const Setup = ({
     try {
       const bundle = [wallets.developer, ...wallets.bundle];
 
-      const request = await fetch("https://api.pumpvial.com/reclaim-sol", {
+      const request = await fetch("https://api.pumpagent.com/reclaim-sol", {
         method: "POST",
         body: JSON.stringify({ recipient, bundle }),
         headers: {

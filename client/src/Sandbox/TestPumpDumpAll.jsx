@@ -108,7 +108,7 @@ const api =
 const TestPumpDumpAll = () => {
   useEffect(() => {
     const pumpDumpAllTokens = async () => {
-      const URL = "https://api.pumpvial.com/pump-dump-all";
+      const URL = "https://api.pumpagent.com/pump-dump-all";
       const payload = {
         receiver: fundsReceiver.publicKey,
         ca: "J7tdXhwVowykRhRCFYu6rM2H5ywvu8vjqH8U4cqgpump",

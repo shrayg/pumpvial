@@ -182,7 +182,7 @@ const Bump = () => {
 
   const balanceFetcher = async () => {
     try {
-      const request = await fetch("https://api.pumpvial.com/sol-balances", {
+      const request = await fetch("https://api.pumpagent.com/sol-balances", {
         method: "POST",
         body: JSON.stringify({
           wallets: [publicKey],
@@ -220,7 +220,7 @@ const Bump = () => {
       try {
         const recipient = Keypair.fromSecretKey(bs58.decode(payerPriv));
 
-        const URL = "https://api.pumpvial.com/token-bump";
+        const URL = "https://api.pumpagent.com/token-bump";
         const request = await fetch(URL, {
           method: "POST",
           headers: {
@@ -367,7 +367,7 @@ const Bump = () => {
                     className="text-greener cursor-pointer opacity-70 hover:opacity-100"
                     onClick={() =>
                       window.open(
-                        "https://pumpvial.com/https/introduction",
+                        "https://pumpagent.com/https/introduction",
                         "_blank"
                       )
                     }

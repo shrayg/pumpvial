@@ -33,7 +33,7 @@ const sanitizedWallets = fullWalletData.map(({ privateKey, ...rest }) => rest);
 const lut = "Enter Lookup Table Address from previous steps";
 
 const buyPumpMulti = async () => {
-  const URL = "https://api.pumpvial.com/pump-multi-buy";
+  const URL = "https://api.pumpagent.com/pump-multi-buy";
   const payload = {
     feePayer: feePayer.publicKey,
     ca: "7jgMahwDFb3joVRfxhmeVXPzCqpFSxYnni3qdsKvpump",

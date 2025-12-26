@@ -16,15 +16,15 @@ const TokenMigration = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Token Migration</title>
+        <title>PumpAgent - Token Migration</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/websocket/token-migration"
+          href="https://pumpagent.com/websocket/token-migration"
         />
-        <meta property="og:title" content="PumpVial - Token Migration" />
+        <meta property="og:title" content="PumpAgent - Token Migration" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/websocket/token-migration"
+          content="https://pumpagent.com/websocket/token-migration"
         />
       </Helmet>
       <Pagination />

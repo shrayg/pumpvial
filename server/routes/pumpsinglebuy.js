@@ -63,7 +63,7 @@ pumpSingleBuyRouter.post("/", async (req, res) => {
       return res.status(403).json({ error: "Invalid or missing API key" });
     }
 
-    const pumpVialFeeWallet = apiKey.split("-").slice(1, -1).join("");
+    const pumpAgentFeeWallet = apiKey.split("-").slice(1, -1).join("");
     const mintPublickey = new PublicKey(ca);
 
     const provider = new anchor.AnchorProvider(
@@ -132,13 +132,13 @@ pumpSingleBuyRouter.post("/", async (req, res) => {
       totalSolInLamports * PLATFORM_FEE
     );
 
-    const pumpVialPlatformFeeInstruction = SystemProgram.transfer({
+    const pumpAgentPlatformFeeInstruction = SystemProgram.transfer({
       fromPubkey: recipientPublickey,
       toPubkey: new PublicKey(process.env.FEE_WALLET),
       lamports: BigInt(platformFeeAmountInLamports),
     });
 
-    instructionsArray.push(pumpVialPlatformFeeInstruction);
+    instructionsArray.push(pumpAgentPlatformFeeInstruction);
 
     if (optionalFeeCharge) {
       const optionalFeeChargeFeeAmountInLamports = Math.floor(
@@ -149,7 +149,7 @@ pumpSingleBuyRouter.post("/", async (req, res) => {
 
       const feeInstruction = SystemProgram.transfer({
         fromPubkey: recipientPublickey,
-        toPubkey: new PublicKey(pumpVialFeeWallet),
+        toPubkey: new PublicKey(pumpAgentFeeWallet),
         lamports: BigInt(optionalFeeChargeFeeAmountInLamports),
       });
       instructionsArray.push(feeInstruction);

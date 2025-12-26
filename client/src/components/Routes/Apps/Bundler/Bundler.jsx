@@ -262,7 +262,7 @@ const Bundler = () => {
     <div className="flex flex-col h-full relative">
       <Toast />
       <div className="flex w-full h-full opacity-100 xl:hidden justify-center items-center text-[12px] text-gray-500 absolute inset-0">
-        <span>PumpVial Launch Bundler is only availabe on desktop.</span>
+        <span>PumpAgent Launch Bundler is only availabe on desktop.</span>
       </div>
       <div className=" text-gray-600 text-[14px] hidden xl:flex border-b border-b-gray-900">
         <button

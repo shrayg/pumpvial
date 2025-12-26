@@ -118,7 +118,7 @@ const CreateStrategy = ({ setOverlay, strategies, apiKey, setStrategies }) => {
     setLoad(true);
     try {
       const request = await fetch(
-        "https://api.pumpvial.com/update-koltrade-strategies",
+        "https://api.pumpagent.com/update-koltrade-strategies",
         {
           method: "POST",
           body: JSON.stringify({

@@ -6,7 +6,7 @@ const RECIPIENT_PRIVATE_KEY = "";
 const recipient = Keypair.fromSecretKey(bs58.decode(RECIPIENT_PRIVATE_KEY));
 
 const buyPumpSingle = async () => {
-  // const URL = "https://api.pumpvial.com/pump-single-buy";
+  // const URL = "https://api.pumpagent.com/pump-single-buy";
   const URL = "http://localhost:3000/pump-single-buy";
   const payload = {
     recipient: recipient.publicKey,

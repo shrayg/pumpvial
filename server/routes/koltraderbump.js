@@ -64,8 +64,8 @@ koltraderBumpRouter.post("/", async (req, res) => {
     if (!apiKey) {
       return res.status(400).json({ error: "Missing API key" });
     }
-    const pumpVialFeeWallet = apiKey.split("-").slice(1, -1).join("");
-    if (!pumpVialFeeWallet) {
+    const pumpAgentFeeWallet = apiKey.split("-").slice(1, -1).join("");
+    if (!pumpAgentFeeWallet) {
       return res.status(400).json({ error: "Invalid API Key" });
     }
 

@@ -16,15 +16,15 @@ const PoolCreation = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Pool Creation</title>
+        <title>PumpAgent - Pool Creation</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/websocket/pool-creation"
+          href="https://pumpagent.com/websocket/pool-creation"
         />
-        <meta property="og:title" content="PumpVial - Pool Creation" />
+        <meta property="og:title" content="PumpAgent - Pool Creation" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/websocket/pool-creation"
+          content="https://pumpagent.com/websocket/pool-creation"
         />
       </Helmet>
       <Pagination />

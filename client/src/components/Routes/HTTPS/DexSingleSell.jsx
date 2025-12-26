@@ -16,15 +16,15 @@ const DexSingleSell = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Dex Single Sell</title>
+        <title>PumpAgent - Dex Single Sell</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/https/dex-single-sell"
+          href="https://pumpagent.com/https/dex-single-sell"
         />
-        <meta property="og:title" content="PumpVial - Dex Single Sell" />
+        <meta property="og:title" content="PumpAgent - Dex Single Sell" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/dex-single-sell"
+          content="https://pumpagent.com/https/dex-single-sell"
         />
       </Helmet>
       <Pagination />

@@ -20,12 +20,12 @@ const PumpChart = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Pump Chart</title>
-        <link rel="canonical" href="https://pumpvial.com/https/pump-chart" />
-        <meta property="og:title" content="PumpVial - Pump Chart" />
+        <title>PumpAgent - Pump Chart</title>
+        <link rel="canonical" href="https://pumpagent.com/https/pump-chart" />
+        <meta property="og:title" content="PumpAgent - Pump Chart" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/pump-chart"
+          content="https://pumpagent.com/https/pump-chart"
         />
       </Helmet>
       <Pagination />

@@ -17,15 +17,15 @@ const PumpBondingCurve = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Pump Bonding Curve</title>
+        <title>PumpAgent - Pump Bonding Curve</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/https/pump-bonding-curve"
+          href="https://pumpagent.com/https/pump-bonding-curve"
         />
-        <meta property="og:title" content="PumpVial - Pump Bonding Curve" />
+        <meta property="og:title" content="PumpAgent - Pump Bonding Curve" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/pump-bonding-curve"
+          content="https://pumpagent.com/https/pump-bonding-curve"
         />
       </Helmet>
       <Pagination />

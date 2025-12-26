@@ -25,7 +25,7 @@ const BumpToken = ({ activateBumps, ca, traderWallet, apiKey }) => {
   useEffect(() => {
     const invokeBump = async () => {
       try {
-        const res = await fetch("https://api.pumpvial.com/koltrader-bump", {
+        const res = await fetch("https://api.pumpagent.com/koltrader-bump", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -17,15 +17,15 @@ const UserTrades = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - User Trades</title>
+        <title>PumpAgent - User Trades</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/websocket/user-trades"
+          href="https://pumpagent.com/websocket/user-trades"
         />
-        <meta property="og:title" content="PumpVial - User Trades" />
+        <meta property="og:title" content="PumpAgent - User Trades" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/websocket/user-trades"
+          content="https://pumpagent.com/websocket/user-trades"
         />
       </Helmet>
       <Pagination />

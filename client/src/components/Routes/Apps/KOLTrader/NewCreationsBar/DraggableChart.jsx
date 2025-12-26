@@ -120,7 +120,7 @@ const DraggableChart = ({
 
     const fetchChart = async () => {
       try {
-        const res = await fetch("https://api.pumpvial.com/pump-chart", {
+        const res = await fetch("https://api.pumpagent.com/pump-chart", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -192,7 +192,7 @@ const DraggableChart = ({
     const startTime = performance.now();
 
     const attemptBuy = async () => {
-      const request = await fetch("https://api.pumpvial.com/koltrader-buy", {
+      const request = await fetch("https://api.pumpagent.com/koltrader-buy", {
         method: "POST",
         body: JSON.stringify({
           ca,

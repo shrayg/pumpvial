@@ -14,13 +14,13 @@ const Footer = () => {
         <div className="flex  flex-col md:flex-row justify-between items-center gap-2  md:gap-4">
           <div className="text-sm flex justify-center items-center">
             <img src={Vial} alt="Vial" className="w-3 h-3 mr-2" /> ©{" "}
-            {new Date().getFullYear()} PumpVial. All rights reserved.
+            {new Date().getFullYear()} PumpAgent. All rights reserved.
           </div>
 
           <div className="flex justify-center items-center gap-2 bg-black dark:bg-transparent">
             <button
               className="text-gray-700 text-sm p-2.5 border border-gray-900 rounded-md cursor-pointer hover:text-white hover:border-gray-700 hover:bg-[#111]"
-              onClick={() => window.open("https://x.com/PumpVial", "_blank")}
+              onClick={() => window.open("https://x.com/PumpAgent", "_blank")}
               aria-label="Twitter Link"
             >
               <FaXTwitter />
@@ -37,7 +37,7 @@ const Footer = () => {
             <button
               className="text-gray-700 text-sm p-2.5 border border-gray-900 rounded-md cursor-pointer hover:text-white hover:border-gray-700 hover:bg-[#111]"
               onClick={() =>
-                window.open("https://medium.com/@PumpVial", "_blank")
+                window.open("https://medium.com/@PumpAgent", "_blank")
               }
               aria-label="Twitter Link"
             >
@@ -46,7 +46,7 @@ const Footer = () => {
             <button
               className="text-gray-700 text-sm p-2.5 border border-gray-900 rounded-md cursor-pointer hover:text-white hover:border-gray-700 hover:bg-[#111]"
               onClick={() =>
-                window.open("https://github.com/PumpVial", "_blank")
+                window.open("https://github.com/PumpAgent", "_blank")
               }
               aria-label="GitHub Link"
             >
@@ -62,7 +62,7 @@ const Footer = () => {
               Privacy
             </a>
             <a
-              href="mailto:contact@pumpvial.com"
+              href="mailto:contact@pumpagent.com"
               className="hover:text-white transition-colors"
             >
               Contact

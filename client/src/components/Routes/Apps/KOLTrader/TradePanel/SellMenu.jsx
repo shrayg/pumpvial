@@ -45,7 +45,7 @@ const SellMenu = ({
     const getCurve = async () => {
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/pump-token-info",
+          "https://api.pumpagent.com/pump-token-info",
           {
             method: "POST",
             body: JSON.stringify({
@@ -88,8 +88,8 @@ const SellMenu = ({
     const jitoTip = Math.floor(Number(swapSetting.jitoTip) * 1e9);
 
     const sellUrl = migrated
-      ? "https://api.pumpvial.com/koltrader-dex-sell"
-      : "https://api.pumpvial.com/koltrader-sell";
+      ? "https://api.pumpagent.com/koltrader-dex-sell"
+      : "https://api.pumpagent.com/koltrader-sell";
 
     if (!ca || !recipient || !tokenAmount) return;
     setTradeLoad(true);

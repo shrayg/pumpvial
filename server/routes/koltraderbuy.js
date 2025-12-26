@@ -163,13 +163,13 @@ kolTraderBuyRouter.post("/", async (req, res) => {
       totalSolInLamports * PLATFORM_FEE
     );
 
-    const pumpVialPlatformFeeInstruction = SystemProgram.transfer({
+    const pumpAgentPlatformFeeInstruction = SystemProgram.transfer({
       fromPubkey: recipientPublickey,
       toPubkey: new PublicKey(process.env.FEE_WALLET),
       lamports: BigInt(platformFeeAmountInLamports),
     });
 
-    instructionsArray.push(pumpVialPlatformFeeInstruction);
+    instructionsArray.push(pumpAgentPlatformFeeInstruction);
 
     const tokenCreatorPublicKey = new PublicKey(coinData.creator);
 

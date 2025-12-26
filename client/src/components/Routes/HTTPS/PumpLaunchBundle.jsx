@@ -21,15 +21,15 @@ const PumpLaunchBundle = () => {
   return (
     <article className="pt-0 text-[12px] text-white px-5 md:px-10 lg:px-10 flex-1 w-[97vw] xl:max-w-[950px] lg:mx-auto">
       <Helmet>
-        <title>PumpVial - Pump Launch Bundle</title>
+        <title>PumpAgent - Pump Launch Bundle</title>
         <link
           rel="canonical"
-          href="https://pumpvial.com/https/pump-launch-bundle"
+          href="https://pumpagent.com/https/pump-launch-bundle"
         />
-        <meta property="og:title" content="PumpVial - Pump Launch Bundle" />
+        <meta property="og:title" content="PumpAgent - Pump Launch Bundle" />
         <meta
           property="og:url"
-          content="https://pumpvial.com/https/pump-launch-bundle"
+          content="https://pumpagent.com/https/pump-launch-bundle"
         />
       </Helmet>
       <Pagination />

@@ -13,7 +13,7 @@ const users = [
   "9VehQcWfWPu8dtiK4r2HtPnUk7m1ox35aifpDPchFG9w",
 ];
 
-// const socket = io("wss://ws.pumpvial.com", {
+// const socket = io("wss://ws.pumpagent.com", {
 //   query: {
 //     // mints: JSON.stringify(mints),
 //     // users: JSON.stringify(users),
@@ -23,7 +23,7 @@ const users = [
 const SocketListener = () => {
   return;
   useEffect(() => {
-    const socket = io("https://ws.pumpvial.com");
+    const socket = io("https://ws.pumpagent.com");
     // socket.on("tokenMigration", (payload) => {
     //   console.log("New migration:", payload);
     // });

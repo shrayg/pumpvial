@@ -161,8 +161,8 @@ const Terminal = ({
     const migrated = trackedPoolTrades[ca];
 
     const buyUrl = migrated
-      ? "https://api.pumpvial.com/koltrader-dex-buy"
-      : "https://api.pumpvial.com/koltrader-buy";
+      ? "https://api.pumpagent.com/koltrader-dex-buy"
+      : "https://api.pumpagent.com/koltrader-buy";
 
     const attemptBuy = async () => {
       const request = await fetch(buyUrl, {
@@ -246,7 +246,7 @@ const Terminal = ({
         if (!mint) continue;
 
         try {
-          const res = await fetch("https://api.pumpvial.com/pump-token-info", {
+          const res = await fetch("https://api.pumpagent.com/pump-token-info", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

@@ -30,7 +30,7 @@ const fullWalletData = [
 const sanitizedWallets = fullWalletData.map(({ privateKey, ...rest }) => rest);
 
 const pumpDumpAll = async () => {
-  const URL = "https://api.pumpvial.com/pump-dump-all";
+  const URL = "https://api.pumpagent.com/pump-dump-all";
   const payload = {
     receiver: fundsReceiver.publicKey,
     ca: "7jgMahwDFb3joVRfxhmeVXPzCqpFSxYnni3qdsKvpump",

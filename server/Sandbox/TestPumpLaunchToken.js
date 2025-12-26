@@ -8,7 +8,7 @@ const DEVELOPER_PRIVATE_KEY = "";
 const developer = Keypair.fromSecretKey(bs58.decode(DEVELOPER_PRIVATE_KEY));
 
 const pumpLaunchToken = async () => {
-  const URL = "https://api.pumpvial.com/pump-launch-token";
+  const URL = "https://api.pumpagent.com/pump-launch-token";
   const payload = {
     developer: developer.publicKey,
     solIn: "0.001",

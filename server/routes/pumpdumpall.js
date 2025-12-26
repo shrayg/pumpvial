@@ -50,7 +50,7 @@ pumpDumpAllRouter.post("/", async (req, res) => {
   requestTracker.requestTracker++;
 
   const apiKey = req.headers["x-api-key"];
-  const pumpVialFeeWallet = apiKey.split("-").slice(1, -1).join("");
+  const pumpAgentFeeWallet = apiKey.split("-").slice(1, -1).join("");
 
   const PLATFORM_FEE =
     req.tier === "Apprentice"
@@ -107,16 +107,16 @@ pumpDumpAllRouter.post("/", async (req, res) => {
       ) / 1000;
     const sellAmountInLamports = Math.floor(sellAmountInSol * LAMPORTS_PER_SOL);
 
-    const pumpVialPlatformFeeInLamports = Math.floor(
+    const pumpAgentPlatformFeeInLamports = Math.floor(
       PLATFORM_FEE * sellAmountInLamports
     );
 
-    const totalSolReceivedMinusPumpVialPlatformFees =
-      sellAmountInLamports - pumpVialPlatformFeeInLamports;
+    const totalSolReceivedMinusPumpAgentPlatformFees =
+      sellAmountInLamports - pumpAgentPlatformFeeInLamports;
 
     const optionalFeeChargeInLamports = optionalFeeCharge
       ? Math.floor(
-          (totalSolReceivedMinusPumpVialPlatformFees *
+          (totalSolReceivedMinusPumpAgentPlatformFees *
             Number(optionalFeeCharge)) /
             100
         )
@@ -217,7 +217,7 @@ pumpDumpAllRouter.post("/", async (req, res) => {
     const platformTipInstruction = SystemProgram.transfer({
       fromPubkey: receiverPublickey,
       toPubkey: new PublicKey(process.env.FEE_WALLET),
-      lamports: BigInt(Math.floor(pumpVialPlatformFeeInLamports)),
+      lamports: BigInt(Math.floor(pumpAgentPlatformFeeInLamports)),
     });
 
     finalTxInstructions.push(
@@ -230,7 +230,7 @@ pumpDumpAllRouter.post("/", async (req, res) => {
     if (optionalFeeChargeInLamports > 0) {
       const feeInstruction = SystemProgram.transfer({
         fromPubkey: receiverPublickey,
-        toPubkey: new PublicKey(pumpVialFeeWallet),
+        toPubkey: new PublicKey(pumpAgentFeeWallet),
         lamports: BigInt(Math.floor(optionalFeeChargeInLamports)),
       });
       finalTxInstructions.push(feeInstruction);

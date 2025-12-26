@@ -93,7 +93,7 @@ const Launch = ({ form, wallets, userData, setForm }) => {
         tip: jitoTip,
       };
 
-      const URL = `https://api.pumpvial.com/${
+      const URL = `https://api.pumpagent.com/${
         platform === "Pump" ? "pump" : "bonk"
       }-launch-bundle`;
 
@@ -133,7 +133,7 @@ const Launch = ({ form, wallets, userData, setForm }) => {
       });
 
       const confirmRequest = await fetch(
-        "https://api.pumpvial.com/confirm-bundle",
+        "https://api.pumpagent.com/confirm-bundle",
         {
           method: "POST",
           body: JSON.stringify({ bundle: completedTransactions }),

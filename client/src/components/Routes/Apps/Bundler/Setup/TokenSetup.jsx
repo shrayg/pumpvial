@@ -70,7 +70,7 @@ const TokenSetup = ({ form, setForm, userData }) => {
       const { name, symbol, image, description, twitter, telegram, website } =
         form;
 
-      // const request = await fetch("https://api.pumpvial.com/create-ipfs", {
+      // const request = await fetch("https://api.pumpagent.com/create-ipfs", {
       const request = await fetch("http://localhost:3000/create-ipfs", {
         method: "POST",
         body: JSON.stringify({

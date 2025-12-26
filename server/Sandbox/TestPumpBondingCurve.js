@@ -3,7 +3,7 @@ import axios from "axios";
 const getPumpBondingCurve = async (ca) => {
   try {
     const response = await axios.post(
-      // "https://api.pumpvial.com/pump-bonding-curve",
+      // "https://api.pumpagent.com/pump-bonding-curve",
       "http://localhost:3000/pump-bonding-curve",
       { ca },
       {

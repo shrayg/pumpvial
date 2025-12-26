@@ -52,7 +52,7 @@ const Privacy = () => {
             <p>
               <strong>Company</strong> (referred to as either &quot;the
               Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
-              in this Agreement) refers to PumpVial.
+              in this Agreement) refers to PumpAgent.
             </p>
           </li>
           <li className="mb-4">
@@ -100,14 +100,14 @@ const Privacy = () => {
           </li>
           <li className="mb-4">
             <p>
-              <strong>Website</strong> refers to PumpVial, accessible from{" "}
+              <strong>Website</strong> refers to PumpAgent, accessible from{" "}
               <u>
                 <a
-                  href="https://www.pumpvial.com/"
+                  href="https://www.pumpagent.com/"
                   rel="external nofollow noopener noreferrer"
                   target="_blank"
                 >
-                  https://www.pumpvial.com
+                  https://www.pumpagent.com
                 </a>
               </u>
             </p>
@@ -539,7 +539,7 @@ const Privacy = () => {
         </p>
         <ul>
           <li>
-            <p>By email:&nbsp;info@pumpvial.com</p>
+            <p>By email:&nbsp;info@pumpagent.com</p>
           </li>
         </ul>
       </div>

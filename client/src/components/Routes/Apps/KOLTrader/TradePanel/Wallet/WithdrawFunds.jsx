@@ -29,7 +29,7 @@ const WithdrawFunds = ({
       const toWithdraw = solBalance * (withdrawAmount / 100);
 
       const response = await fetch(
-        "https://api.pumpvial.com/koltrader-withdraw",
+        "https://api.pumpagent.com/koltrader-withdraw",
         {
           method: "POST",
           headers: {

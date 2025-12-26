@@ -191,7 +191,7 @@ const NewCreationsBar = ({
     // Fetch initial candle data
     const fetchChart = async () => {
       try {
-        const res = await fetch("https://api.pumpvial.com/pump-chart", {
+        const res = await fetch("https://api.pumpagent.com/pump-chart", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

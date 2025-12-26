@@ -70,7 +70,7 @@ pumpLaunchTokenRouter.post("/", async (req, res) => {
   requestTracker.requestTracker++;
 
   const apiKey = req.headers["x-api-key"];
-  const pumpVialFeeWallet = apiKey.split("-").slice(1, -1).join("");
+  const pumpAgentFeeWallet = apiKey.split("-").slice(1, -1).join("");
 
   const creator = new PublicKey(developer);
   const mintKeypair = vanityPriv
@@ -129,23 +129,23 @@ pumpLaunchTokenRouter.post("/", async (req, res) => {
 
   const instructionsArray = [];
 
-  // First wallet pays PumpVial platform fees
-  const pumpVialPlatformFeesLamports = Math.floor(
+  // First wallet pays PumpAgent platform fees
+  const pumpAgentPlatformFeesLamports = Math.floor(
     PLATFORM_FEE * LAMPORTS_PER_SOL
   );
-  const pumpVialPlatformFeeInstruction = SystemProgram.transfer({
+  const pumpAgentPlatformFeeInstruction = SystemProgram.transfer({
     fromPubkey: creator,
     toPubkey: new PublicKey(process.env.FEE_WALLET),
-    lamports: BigInt(pumpVialPlatformFeesLamports),
+    lamports: BigInt(pumpAgentPlatformFeesLamports),
   });
 
-  instructionsArray.push(pumpVialPlatformFeeInstruction);
+  instructionsArray.push(pumpAgentPlatformFeeInstruction);
 
   // User optional fees
   if (optionalFeeCharge > 0) {
     const feeInstruction = SystemProgram.transfer({
       fromPubkey: creator,
-      toPubkey: new PublicKey(pumpVialFeeWallet),
+      toPubkey: new PublicKey(pumpAgentFeeWallet),
       lamports: BigInt(Math.floor(optionalFeeCharge * LAMPORTS_PER_SOL)),
     });
     instructionsArray.push(feeInstruction);

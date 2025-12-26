@@ -37,7 +37,7 @@ const NewCreationsFeed = ({
       await new Promise((resolve) => setTimeout(resolve, delay));
 
       try {
-        const res = await fetch("https://api.pumpvial.com/pump-token-info", {
+        const res = await fetch("https://api.pumpagent.com/pump-token-info", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

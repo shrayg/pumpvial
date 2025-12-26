@@ -24,7 +24,7 @@ const TestCreateLookupTable = () => {
       return;
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/create-lookup-table",
+          "https://api.pumpagent.com/create-lookup-table",
           {
             method: "POST",
             body: JSON.stringify({
@@ -61,7 +61,7 @@ const TestCreateLookupTable = () => {
 
     try {
       const request = await fetch(
-        "https://api.pumpvial.com/extend-lookup-table",
+        "https://api.pumpagent.com/extend-lookup-table",
         {
           method: "POST",
           body: JSON.stringify({

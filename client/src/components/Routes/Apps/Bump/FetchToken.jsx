@@ -15,7 +15,7 @@ const FetchToken = ({
     const tokenFetcher = async () => {
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/pump-token-info",
+          "https://api.pumpagent.com/pump-token-info",
           {
             method: "POST",
             body: JSON.stringify({

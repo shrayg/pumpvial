@@ -41,7 +41,7 @@ const Dashboard = () => {
 
         const wallet = data[0]?.api_key?.split("-").slice(1, -1).join("");
         const apiKey = data[0]?.api_key;
-        const request = await fetch("https://api.pumpvial.com/get-balance", {
+        const request = await fetch("https://api.pumpagent.com/get-balance", {
           method: "POST",
           body: JSON.stringify({
             wallet,
@@ -71,10 +71,10 @@ const Dashboard = () => {
         }`}
       >
         <Helmet>
-          <title>PumpVial - Dashboard</title>
-          <link rel="canonical" href="https://pumpvial.com/dashboard" />
-          <meta property="og:title" content="PumpVial - Dashboard" />
-          <meta property="og:url" content="https://pumpvial.com/dashboard" />
+          <title>PumpAgent - Dashboard</title>
+          <link rel="canonical" href="https://pumpagent.com/dashboard" />
+          <meta property="og:title" content="PumpAgent - Dashboard" />
+          <meta property="og:url" content="https://pumpagent.com/dashboard" />
         </Helmet>
         <SideBar menu={menu} setMenu={setMenu} />
         {menu === "Dashboard" && (

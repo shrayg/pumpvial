@@ -17,7 +17,7 @@ const wallets = [
 const createLookupTable = async () => {
   try {
     const response = await axios.post(
-      "https://api.pumpvial.com/create-lookup-table",
+      "https://api.pumpagent.com/create-lookup-table",
       {
         creator: creatorKeypair.publicKey,
       }
@@ -46,7 +46,7 @@ const extendLookupTable = async () => {
 
   try {
     const response = await axios.post(
-      "https://api.pumpvial.com/extend-lookup-table",
+      "https://api.pumpagent.com/extend-lookup-table",
       {
         creator: creatorKeypair.publicKey,
         wallets,

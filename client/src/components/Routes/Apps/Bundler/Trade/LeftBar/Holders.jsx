@@ -50,7 +50,7 @@ const Holders = ({
 
     const fetchHolders = async () => {
       try {
-        const response = await fetch("https://api.pumpvial.com/mint-holders", {
+        const response = await fetch("https://api.pumpagent.com/mint-holders", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

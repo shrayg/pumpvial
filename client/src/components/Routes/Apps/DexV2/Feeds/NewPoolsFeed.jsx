@@ -41,7 +41,7 @@ const NewPoolsFeed = ({
       if (!ca) return;
 
       try {
-        const res = await fetch("https://api.pumpvial.com/asset-info", {
+        const res = await fetch("https://api.pumpagent.com/asset-info", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

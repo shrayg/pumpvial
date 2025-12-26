@@ -27,7 +27,7 @@ const Checkout = ({
     const getPaymentWallet = async () => {
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/get-tier-payment-wallet",
+          "https://api.pumpagent.com/get-tier-payment-wallet",
           {
             method: "POST",
             body: JSON.stringify({ proof }),
@@ -50,7 +50,7 @@ const Checkout = ({
   useEffect(() => {
     const getSolPlanPrice = async () => {
       try {
-        const request = await fetch("https://api.pumpvial.com/tier-sol-price", {
+        const request = await fetch("https://api.pumpagent.com/tier-sol-price", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const Checkout = ({
     setLoading(true);
     try {
       const request = await fetch(
-        "https://api.pumpvial.com/confirm-tier-payment",
+        "https://api.pumpagent.com/confirm-tier-payment",
         {
           method: "POST",
           body: JSON.stringify({

@@ -51,7 +51,7 @@ const BumpBot = ({ userData, form, wallets }) => {
       };
       try {
         const request = await fetch(
-          "https://api.pumpvial.com/pump-token-bump",
+          "https://api.pumpagent.com/pump-token-bump",
           {
             method: "POST",
             headers: {

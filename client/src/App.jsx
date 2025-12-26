@@ -131,34 +131,34 @@ const App = () => {
   return (
     <div className="bg-black dark:bg-white text-6xl font-bold font-regular min-h-screen flex flex-col">
       <Helmet>
-        <title>PumpVial - Pump.fun API Toolkit | Build Faster</title>
-        <link rel="canonical" href="https://pumpvial.com" />
+        <title>PumpAgent - Pump.fun API Toolkit | Build Faster</title>
+        <link rel="canonical" href="https://pumpagent.com" />
         <meta
           name="description"
-          content="Build Solana pump.fun applications with PumpVial's API toolkit. Generate wallets, create tokens, bump visibility, and access real-time data feeds. Free developer tools."
+          content="Build Solana pump.fun applications with PumpAgent's API toolkit. Generate wallets, create tokens, bump visibility, and access real-time data feeds. Free developer tools."
         />
         <meta
           name="keywords"
           content="solana api, pump.fun api, solana toolkit, crypto api, blockchain development, solana wallet generator, token bump bot"
         />
-        <meta property="og:title" content="PumpVial - Pump.fun API Toolkit" />
-        <meta property="og:image" content="https://pumpvial.com/Social.png" />
-        <meta property="og:site_name" content="PumpVial" />
+        <meta property="og:title" content="PumpAgent - Pump.fun API Toolkit" />
+        <meta property="og:image" content="https://pumpagent.com/Social.png" />
+        <meta property="og:site_name" content="PumpAgent" />
         <meta
           property="og:description"
-          content="Build Solana pump.fun applications with PumpVial's comprehensive API toolkit. Generate wallets, create tokens, and access real-time data."
+          content="Build Solana pump.fun applications with PumpAgent's comprehensive API toolkit. Generate wallets, create tokens, and access real-time data."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://pumpvial.com" />
+        <meta property="og:url" content="https://pumpagent.com" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="PumpVial - Pump.fun API Toolkit" />
+        <meta name="twitter:title" content="PumpAgent - Pump.fun API Toolkit" />
         <meta
           name="twitter:description"
           content="Build powerful Solana pump.fun applications with our free API toolkit. Generate wallets, bump tokens, real-time data feeds."
         />
-        <meta name="twitter:site" content="@PumpVial" />
-        <meta name="twitter:creator" content="@PumpVial" />
-        <meta name="twitter:image" content="https://pumpvial.com/Social.png" />
+        <meta name="twitter:site" content="@PumpAgent" />
+        <meta name="twitter:creator" content="@PumpAgent" />
+        <meta name="twitter:image" content="https://pumpagent.com/Social.png" />
       </Helmet>
 
       <CookieBanner />

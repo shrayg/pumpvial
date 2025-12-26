@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://pumpvial.com/sitemap.xml
+Sitemap: https://pumpagent.com/sitemap.xml
 
 # Block admin/private areas if any
 

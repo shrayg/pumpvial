@@ -16,7 +16,7 @@ const TestPumpSingleBuy = () => {
   useEffect(() => {
     // return;
     const buyPumpSingle = async () => {
-      const URL = "https://api.pumpvial.com/pump-single-buy";
+      const URL = "https://api.pumpagent.com/pump-single-buy";
       const payload = {
         recipient: recipient.publicKey,
         ca: "93xHZCeaRxL7iwRQUPcW7utRbKF5UhMmaSQW9pdEpump",

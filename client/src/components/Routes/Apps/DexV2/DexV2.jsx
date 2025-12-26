@@ -29,7 +29,7 @@ const DexV2 = () => {
     if (!user) return;
     const loadUser = async () => {
       try {
-        const request = await fetch("https://api.pumpvial.com/load-koltrader", {
+        const request = await fetch("https://api.pumpagent.com/load-koltrader", {
           method: "POST",
           body: JSON.stringify({
             proof,

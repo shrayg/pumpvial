@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getKingOfTheHill = async () => {
   try {
-    const request = await axios.get("https://api.pumpvial.com/pump-koth", {
+    const request = await axios.get("https://api.pumpagent.com/pump-koth", {
       headers: {
         "Content-Type": "application/json",
         "x-api-key":

@@ -31,7 +31,7 @@ const KOLTradesFeed = ({
     await new Promise((resolve) => setTimeout(resolve, delay));
 
     try {
-      const res = await fetch("https://api.pumpvial.com/pump-token-info", {
+      const res = await fetch("https://api.pumpagent.com/pump-token-info", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const KOLTradesFeed = ({
     if (!ca) return;
 
     try {
-      const res = await fetch("https://api.pumpvial.com/asset-info", {
+      const res = await fetch("https://api.pumpagent.com/asset-info", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

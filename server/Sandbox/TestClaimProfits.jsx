@@ -17,13 +17,13 @@ const payload = {
 };
 
 const claimProfits = async () => {
-  const URL = "https://api.pumpvial.com/claim-profits";
+  const URL = "https://api.pumpagent.com/claim-profits";
 
   try {
     const request = await axios.post(URL, payload, {
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": process.env.PUMPVIAL_API_KEY,
+        "x-api-key": process.env.PUMPAGENT_API_KEY,
       },
     });
 

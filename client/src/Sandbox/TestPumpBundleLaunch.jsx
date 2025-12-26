@@ -116,7 +116,7 @@ const TestPumBundleLaunch = () => {
   useEffect(() => {
     return;
     const pumpLaunchBundle = async () => {
-      const URL = "https://api.pumpvial.com/pump-launch-bundle";
+      const URL = "https://api.pumpagent.com/pump-launch-bundle";
       const payload = {
         funderPubKey: funder.publicKey,
         sanitizedWallets,
